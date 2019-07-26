@@ -74,27 +74,37 @@
 	</header>
 
 	<main class="index-content wrap" id="index-content">
-		<table>
-			<caption></caption>
+		<table class="customer-messages">
+			<caption>Responsive CSS Only Table </caption>
 			<thead>
 					<tr>
-							<th colspan="2">The table header</th>
+							<th class="t-avatar"></th>
+							<th class="t-name">From</th>
+							<th class="t-ping">Ping</th>
+							<th class="t-date">Date</th>
+							<th class="t-url"></th>
 					</tr>
 			</thead>
-			<tbody>
+			<tbody id="customer-list">
 
 			</tbody>
 		</table>
 	</main>
 
 	<script id="template-list" type="text/x-handlebars-template">
-		<tr>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-			<td></td>
-		</tr>
+		{{#each chats}}
+			<tr>
+				<td class="t-avatar">{{avatar}}</td>
+				<td class="t-name">{{name}}</td>
+				<td class="t-ping">{{ping}}</td>
+				<td class="t-date"><date>{{date}}</date></td>
+				<td class="t-url"><a href="{{url}}"> > </a></td>
+			</tr>
+		{{else}}
+			<tr>
+				<td colspan="5">No data to show</td>
+			</tr>
+		{{/each}}
 	</script>
 
 
