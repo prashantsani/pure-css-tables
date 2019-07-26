@@ -1,0 +1,108 @@
+/* ------------
+		Reset
+  ------------ */
+// Visually Hide a tag
+.hide-v {
+  border: none !important;
+  clip: rect(0 0 0 0) !important;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+  display: block;
+}
+.hidden {
+  display: none;
+}
+/* Contain Floats */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+/* ------------
+		Floats
+	------------ */
+#body {
+  .float-right {
+    float: right;
+  }
+  .float-left {
+    float: left;
+  }
+}
+
+/* ------------
+		Display
+	------------ */
+#body{
+  .d-inline-block {
+    display: inline-block;
+  }
+  .d-block {
+    display: block;
+  }
+  .d-flex {
+    display: flex;
+  }
+  .border-box{
+    @include box-sizing(border-box);
+  }
+}
+/* ------------
+		Padding
+	------------ */
+#body {
+  .pt-0 {
+    padding-top: 0;
+  }
+  .pb-0 {
+    padding-bottom: 0;
+  }
+  .pr-0 {
+    padding-right: 0;
+  }
+  .pl-0 {
+    padding-left: 0;
+  }
+}
+
+/* ------------
+		Margins
+	------------ */
+#body {
+  .mt-0 {
+    margin-top: 0;
+  }
+  .mb-0 {
+    margin-bottom: 0;
+  }
+  .mr-0 {
+    margin-right: 0;
+  }
+  .ml-0 {
+    margin-left: 0;
+  }
+}
+
+/* ------------
+		Width
+	------------ */
+.w-100 {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.w-200 {
+  width: 200% !important;
+  max-width: 200% !important;
+}
+
+/* ------------
+		Misc
+	------------ */

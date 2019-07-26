@@ -1,0 +1,288 @@
+/*
+	Responsive Tables Demo
+
+	HTML,CSS,JS Code developed by :
+	Author:Prashant Sani,<contact@prashantsani.com>
+
+	Colour Codes:
+	base level Height :
+	base level Width :
+
+	sass --watch main.scss:style.css --style compressed
+
+*/
+
+/* =============================================================================
+	Index
+
+	1) SCSS Variables
+	2) Fonts / Mixins / Functions / Plugins
+	3) Global Styles, Resets, Global Links, Abstraction
+	4) Header, Main Navigation
+	5) Content
+	6) Footer
+	7) Forms
+	8) JS Library Styles
+	9) Non-Symentic Class / Helper Classes
+	10) Print Styles
+	==========================================================================  */
+/* =============================================================================
+	 1. SCSS Variables
+========================================================================== */
+
+	// Colors
+	$green: #36b76f;
+	$green-light: #44cb81;
+	
+	$white: #ffffff;
+
+	$grey-dark: #545454;
+	$grey: #999999;
+	$grey-light: #f1f1f1;
+
+	
+	// Sizes
+	$tablet-p: 780px; // -
+	$tablet-l: 1020px; // -
+	$laptop:1350px; // -
+	$laptop:1500px; //+
+
+	// Section Heights
+
+	// Letter Spacing
+
+	$site_url: '';
+
+/* =============================================================================
+	 2. Fonts / Mixins / Functions / Plugins
+========================================================================== */
+	@import '_fonts/fonts.scss';
+	@import 'mixins.scss';
+	@import 'preloader.scss';
+
+/* =============================================================================
+	 3. Global Styles, Resets, Global Links, Abstraction
+========================================================================== */
+	/* ------------
+		HTML 5 Resets
+	------------ */
+		@import 'reset.scss';
+	/* ------------
+		Selection
+	------------ */
+		::-moz-selection { background: #2d2d32; color: #fff; text-shadow: none;opacity: 1 }
+		::selection { background: #2d2d32; color: #fff; text-shadow: none;opacity: 1 }
+	/* ------------
+		Selection
+	------------ */
+	ol.unstyled,
+	ul.unstyled{
+		list-style-type: none;
+	}
+	/* ------------
+		Links & Buttons
+	------------ */
+		a, button {
+			text-decoration: none;
+			@include transition(all 0.3s ease-in-out);
+		}
+		a:link,a:visited{
+			color: inherit;
+		}
+		.no-touchevents a:hover,
+		.no-touchevents a:active{
+		}
+		.current-link {
+			cursor: default;
+		}
+		button, button:hover {
+			outline: none;
+			border: none;
+			background: transparent
+		}
+		button,
+		.button{
+			background-color: $green;
+			color: $white;
+			text-transform: uppercase;
+			padding: 10px 15px;
+			line-height: 1;
+			border-radius: 5px;
+			font-size: 1rem;
+			&.active,
+			.no-touchevents &:hover{
+				// hovers are disabled for touch screen devices 
+				// because 
+				background-color: $green-light;
+			}
+		}
+
+	/* ------------
+		Typography
+	------------ */
+	// Following Heading Sizes as per bootstrap
+	html{
+		font-family: ProximaNova-Regular,Helvetica,Arial,sans-serif;
+		font-size: 12px;
+		$grey-dark: #545454;
+	}
+	h1, h2, h3, h4, h5,
+	.h1, .h2, .h3, .h4, .h5{
+		font-family: ProximaNova-Bold,Helvetica,Arial,sans-serif;
+	}
+	h1, .h1{
+		font-size: 2.5rem;
+		&.heading{
+			position: relative;
+		}
+	}
+	h2, .h2{
+		font-size: 2rem
+	}
+	h3, .h3{
+		font-size: 1.75rem;
+	}
+	h4, .h4{
+		font-size: 1.5rem
+	}
+	h5, .h5{
+		font-size: 1.25rem
+	}
+	h6,.h6{
+    font-size: 1rem;
+    color: inherit;
+	}
+	small{
+		line-height: 1.8;
+    letter-spacing: 0.169em;
+	}
+	p, .p, label{
+		// font-family: ;
+		// line-height: ;
+		// font-size: ;
+		// margin-bottom: ;
+		// letter-spacing: ;
+		// font-weight: ;
+		&:last-child{
+			margin-bottom: 0;
+		}
+		strong,b{
+			// font-family:
+		}
+		em,u,i{
+			text-decoration: underline;
+		}
+	}
+	.p{
+		color: inherit;
+	}
+	.pushed{
+		margin-left: 2.5em
+	}
+	dd{
+
+	}
+	time{
+
+	}
+	a{
+		font-family: inherit;
+	}
+	.text-left,
+	.text-right,
+	.text-center{
+		display: block;
+	}
+	.text-left{
+		text-align: left;
+	}
+	.text-right{
+		text-align: right;
+	}
+	.text-center{
+		text-align: center;
+	}
+	.text{
+		&-white{
+			color: $white;
+		}
+	}
+	.text-center{
+		text-align: center
+	}
+	/* ------------
+		Globals
+	------------ */
+		.wrap {
+			margin: 0 auto;
+			position: relative;
+			z-index: 1;
+			width: 1440px; // Why https://1440px.com/ is ideal grid 
+			max-width: 96%;
+		}
+
+	/* ------------
+		Icons
+	------------ */
+		.icon{
+			font-size: 0;
+			line-height: 0;
+		}
+	/* ------------
+		Page Fade-in/out
+	------------ */
+	html{
+
+	}
+	html.no-js{
+
+	}
+
+/* =============================================================================
+	 4. Header, Main Nav
+========================================================================== */
+	// Combining Header and Nav for Landing and blog page
+	@import 'header.scss';
+	@import 'nav.scss';
+	@import 'social.scss';
+
+
+/* =============================================================================
+	 5. Content
+========================================================================== */
+		#main{
+
+		}
+	/* ------------
+		Pages
+	------------ */
+		@import '_pages/index.scss';
+
+/* =============================================================================
+	6. Footer
+========================================================================== */
+	@import 'footer.scss';
+
+/* =============================================================================
+	7. Forms
+========================================================================== */
+	@import 'forms.scss';
+
+/* =============================================================================
+	8. JS Library Styles
+========================================================================== */
+
+/* =============================================================================
+	9. Non-Symentic Class / Helper Classes
+========================================================================== */
+	@import 'helper.scss';
+
+/* =============================================================================
+	10. Print Styles
+========================================================================== */
+
+@media print {
+	#hamburger{
+		display: none
+	}
+}

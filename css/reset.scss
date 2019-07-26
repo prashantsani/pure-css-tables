@@ -1,0 +1,50 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+button, input, select, textarea { font: inherit;  }
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym,
+address, cite, code, del, dfn, em, img, ins, kbd, q, samp, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label,
+legend, table, caption, tbody, tfoot, thead, tr, th, td,figure {
+	border:0;
+	outline:0;
+	vertical-align:baseline;
+	background:transparent;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+input, textarea, select, button {
+	text-transform: inherit
+}
+.float-left {
+	float: left;
+}
+.float-right {
+	float: right;
+}
+a img, img {
+	border: none;
+}
+img {
+	max-width: 100%;
+}
+svg{
+	display: block;
+}
+.js noscript{
+	display: none;
+}
+hr{
+	display: block;
+	background: none;
+	border: none;
+	outline: none;
+	box-shadow: none;
+	margin: 0;
+	padding: 0;
+	// Play around with borders
+	// border-bottom:
+}
