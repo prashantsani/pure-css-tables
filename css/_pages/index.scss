@@ -10,3 +10,12 @@
 .index{
 
 }
+
+.t-{
+  &avatar img{
+    width: 30px;
+    display: block;
+    border-radius: 50%;
+    
+  }
+}
