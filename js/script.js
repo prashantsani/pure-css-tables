@@ -47,9 +47,7 @@ Modernizr.on('webp', function(result) {
 	Plugins
 ------------ */
 
- w = window;
- d = document;
-//(function(w,d){
+(function(w,d){
 
 	var _html = d.documentElement,
 			request = new XMLHttpRequest(),
@@ -81,4 +79,4 @@ Modernizr.on('webp', function(result) {
 	};
 	request.send();
 
-//})(window,document);
+})(window,document);
