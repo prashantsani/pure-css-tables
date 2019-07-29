@@ -17,6 +17,7 @@
   th, td{
     font-size: 12px;
     padding: 10px 15px;
+    box-sizing: border-box;
   }
   thead{
     color:white;
@@ -46,10 +47,26 @@
       }
     }
   }
-  .avatar img{
-    width: 30px;
-    display: block;
-    border-radius: 50%;
-    
+  .avatar{
+    width:60px;
+    img{
+      width: 100%;
+      display: block;
+      border-radius: 50%;
+    }
+  } 
+  .name{
+    min-width: 120px;
+    min-width: 28%;
+  }
+  .ping{
+    min-width: 120px;
+    width: 40%;
+  }
+  .date{
+
+  }
+  .link{
+    width: 50px;
   }
 }
