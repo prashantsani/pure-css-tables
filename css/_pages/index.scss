@@ -62,6 +62,10 @@
   .ping{
     min-width: 120px;
     width: 40%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 0;
   }
   .date{
 
