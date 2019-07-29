@@ -79,11 +79,11 @@
 			<caption>Responsive CSS Only Table </caption>
 			<thead>
 					<tr>
-							<th class="t-avatar"></th>
-							<th class="t-name">From</th>
-							<th class="t-ping">Ping</th>
-							<th class="t-date">Date</th>
-							<th class="t-url"></th>
+							<th class="avatar"></th>
+							<th class="name">From</th>
+							<th class="ping">Ping</th>
+							<th class="date">Date</th>
+							<th class="url"></th>
 					</tr>
 			</thead>
 			<tbody id="customer-list">
@@ -95,11 +95,11 @@
 	<script id="template-list" type="text/x-handlebars-template">
 		{{#each chats}}
 			<tr>
-				<td class="t-avatar"><img src="{{avatar}}" /></td>
-				<td class="t-name">{{name}}</td>
-				<td class="t-ping">{{ping}}</td>
-				<td class="t-date"><date datetime="{{date}}">{{date_formatted}}</date></td>
-				<td class="t-url"><a href="{{url}}"> > </a></td>
+				<td class="avatar"><img src="{{avatar}}" /></td>
+				<td class="name">{{name}}</td>
+				<td class="ping">{{ping}}</td>
+				<td class="date"><date datetime="{{date}}">{{date_formatted}}</date></td>
+				<td class="url"><a href="{{url}}"> > </a></td>
 			</tr>
 		{{else}}
 			<tr>
