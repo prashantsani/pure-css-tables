@@ -4,63 +4,72 @@
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Kingstonian",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Member932",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Jennyfer805",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42"
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "User193219",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Deeperda",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Advisord",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Spiritual Loving Angel",
       "ping": "Will you up later today",
-      "date":"May 6, 1:42AM",
+      "date_formatted":"May 6, 1:42AM",
+      "date":"2019-05-06T01:42",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Kingstonian",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Apr 28, 8:59AM",
+      "date_formatted":"Apr 28, 8:59AM",
+      "date":"2019-04-28T08:59",
       "url":"https://prashantsani.com/"
     },
     {
       "avatar":"helpers/dummy-data/avatar.png",
       "name": "Kingstonian",
       "ping": "I didn't hang up, I thought you did",
-      "date":"Jun 20, 12:42PM",
+      "date_formatted":"Jun 20, 12:42PM",
+      "date":"2019-06-20T12:42",
       "url":"https://prashantsani.com/"
     }
   ]
